@@ -1,0 +1,495 @@
+/******************** General  ***********************/
+* {box-sizing: border-box;margin: 0;padding: 0;}
+*::-webkit-scrollbar {width: 8px;background-color: #eee;} 
+*::-webkit-scrollbar-track {background-color: #ccc;} 
+*::-webkit-scrollbar-thumb {background-color: var(--color);border-radius: 5px;}
+
+:root { 
+    --color: #292929; /* f67c92  5c9ef5 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+	
+	
+}
+h1{
+	font-size: 24px 
+}
+p { font-size:  17px ;
+	line-height: 25px ;
+	color:#777 ;
+	text-align: justify
+}
+a{text-decoration: none ;
+	color: #777
+}
+img {
+	max-height: 100% ;
+	height: auto;
+}
+li {
+	list-style-type: none ;
+}
+form{
+	max-width: 100%;
+	margin : 30px 0 
+}
+input {
+	width: 100% ;
+	padding: 12px ;
+	margin-bottom: 15px ;
+	outline: none ;
+	border :2px solid var(--color) ;
+	box-shadow: none ;
+	border-radius: 5px ;
+}
+hr{
+	width: 100% ;
+	border :0 ;
+	border: top 1px solid var(--color) ;
+}
+b{
+	font-size :2.5ch;
+	color : #792294;	
+}
+
+
+
+/******************** General class ******************/
+.container {
+	width:80% ;
+	margin: auto ;
+}
+.text-left {
+	text-align: !important ;
+}
+.text-right {
+	text-align: !important ;
+}
+.daire {
+	display: inline-block ;
+	width: 15px ;
+	height: 15px ;
+	margin: 15px 0 ;
+	background-color: var(--color) ;
+	border-radius: 50% ;
+	
+}
+.cizgi {
+	line-height: 8px ;
+}
+.cizgi1,.cizgi2,.cizgi3 {
+	display: inline-block;
+	background-color: var(--color) ;
+	
+}
+.kutu{
+	width: 49% ;
+	float: left;
+	display: flex;
+
+	
+	
+}
+.kutu1 {
+	width: 49% ;
+	float: left;
+	display: flex;
+	margin-left: 15px ;
+	
+}
+.cizgi1 {
+	width: 15px;
+	height: 15px;
+	border-radius: 50% ;
+}
+.cizgi2 {
+	width: 80px ;
+	height: 1px ;
+}
+.cizgi3 {
+	width: 60px ;
+	height: 1px ;
+}
+.btn {
+	margin: 0 auto;
+	padding: 15px 35px ;
+	outline: none ;
+	border: 2px solid var(--color) ;
+		background-color:transparent ;
+		cursor : pointer ;
+	border-radius: 5px ;
+	font-weight: bold ;
+	transition: background 0.5s ;
+		
+}
+.btn:hover {
+	background-color: var(--color);
+}
+
+/********************  Header *************************/
+
+#header {
+	
+	height: 120vh ;
+	background: url("../img/obito-uchiha-obito-kanui.gif") center right/contain no-repeat ; }
+	#header1 {
+	height: 80vh ;
+	 
+	
+}
+.logo {
+	width:200px ;
+	margin-top: 50px ;
+	
+}
+.header-icerik {
+	max-width: 400px ;
+	margin-top: 150px ;
+}
+.read-more{
+	margin:  20px 0 30px 0 ;
+}
+#sideNav {
+	width: 250px ;
+	height: 100vh;
+	position: fixed;
+	right: -250px ;
+	top: 0 ;
+	background-color: var(--color);
+	z-index: 1 ;
+	overflow-x: hidden;
+	transition: 0.5s ;
+	
+}
+
+#sideNav ul li {
+	margin: 30px ;
+}
+#sideNav ul li:first-child {
+	margin-top: 45px ;
+}
+#sideNav ul li a{
+	color:#FFF ;
+}
+#menuBtn {
+	background-color: var(--color);
+	width: 50px ;
+	position: fixed;
+	right: 40px;
+	top:35px ;
+	border-radius: 5px ;
+	z-index: 1 ;
+	cursor: pointer;
+}
+/* banner */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.548);
+}
+.modal form {
+  position: relative;
+  min-width: 30%;
+  min-width: 30;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: white;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+}
+#modal-kapat {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: gray;
+  padding: 0.5rem;
+  border-bottom-left-radius: 1rem;
+  cursor: pointer;
+}
+#modal-kapat:hover {
+  background: rgb(102, 102, 102);
+}
+.modal form input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+#form-buton {
+  background: #ff6378;
+}
+#form-buton:hover {
+  background: #fa5369;
+}
+
+/******************** About Us and Offer *************/
+#aboutUs, #offer{
+	padding: 70px 0 ;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.about-left,.about-right {
+	flex-basis: 50% ;
+}
+.about-left img{
+	border-radius: 50px ;
+}
+.about-content{
+	max-width: 400px ;
+	display: inline-block;
+}
+.about-content h2 {
+	font-size: 18px ;
+	margin: 50px 0 10px ;
+	font-style: italic;
+}
+.about-content h3{
+	font-size:20px ;
+	font-style: italic;
+	color:#757575 ;
+}
+#offer .btn {
+	margin: 30px 0 ;
+}
+
+/******************** Features ***********************/
+#features {
+	padding: 70px 0 ;
+}
+.features-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 80% ;
+	margin: auto ;
+}
+.features-col{
+	flex-basis: 25% ;
+	text-align: center;
+	transition: 0.8s ;
+}
+.features-col img {
+	width: 100px;
+}
+.features-col h4 {
+	margin-bottom: 15px ;
+	font-size: 20px ;
+	font-weight: 400 ;
+}
+.features-col p {
+	text-align: center;
+}
+.features-col1{
+	flex-basis: 25% ;
+	text-align: center;
+	
+}
+.features-col1:hover{
+	background-color:#F0F4FF ;
+	border-radius: 5px ;
+	cursor: pointer ;
+	transform: scale(1.2) ;
+   z-index: 2 ;
+	
+}
+.features-col1 img {
+	width: 300px;
+	border-radius: 10px ;
+}
+.features-col1 h4 {
+	margin-bottom: 15px ;
+	font-size: 20px ;
+	font-weight: 400 ;
+}
+.features-col p {
+	text-align: center;
+}
+ 
+.features-btn{
+	margin: 80px auto 0 ;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.features-btn .cizgi {
+	text-align: right ;
+	margin-right: 25px ;
+}
+ 
+/******************** Courses - Contact **************/
+#courses, #contact{
+	padding: 70px 0 ;
+}
+.courses-row,.contact-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+.courses-left,.courses-right,.contact-left,.contact-right{
+	flex-basis: 50% ;
+	
+}
+.courses-right img {
+	border-radius: 10px ;
+}
+.courses-content {
+	max-width: 400px ;
+}
+.courses-content .btn {
+	margin:30px 0 ;
+}
+
+/******************** Contact ************************/
+.btn-box {
+	width: 100% ;
+	display: flex;
+	justify-content: space-between ;
+	float: 
+}
+.btn-box .btn {
+	flex-basis: 48% ;
+	
+}
+
+/******************** Footer *************************/
+
+#footer {
+	margin: 30px 0 ;
+}
+.footer-row,.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around; 
+	
+}
+.footer-left {
+	flex-basis: 30% ;
+}
+.footer-right {
+	flex-basis: 70% ;
+	margin-top : 50px ;
+}
+.link-title h4{
+	margin-bottom: 15px ; color: var(--color);
+}
+.copyright img {
+	display: block ;
+	width: 200px ;
+	margin: 40px 0 ;
+}
+.copyright small,.link-title small {
+	display: block ;
+	font-size: 14px ;
+	color:#777 ;
+	line-height: 1.8 ;
+}
+
+	
+
+
+/******************** Social Icons *******************/
+.social-icon {
+	position: fixed;
+	top: :35% ;
+	left: 0 ;
+	z-index: 1;
+}
+
+.social-icon a{
+	display: block ;
+	margin:0 0 15px 20px ;
+	cursor: pointer ;
+	font-size: 25px ;
+	
+}
+.social-icon a:hover {
+	transform: scale(1.5);
+	
+}
+
+
+/******************** Responsive *********************/
+
+@media only screen and (max-width: 700px) {
+
+/******************** General  **********************/
+	h1{
+		font-size: 22px ;
+	}
+	.btn {
+		padding: 10px 16px ;
+		
+	}
+	.container {
+		margin: 0 45px ;
+	}
+/******************** Header ************************/
+	#header {
+		height 75vh ;
+		background: none ;
+	}
+	.logo {
+		width: 175px ;
+		
+	}
+	#sideNav{
+		max-width: 200px ;
+	}
+	^#menuBtn{
+		width: 40px ;
+		right:20px ;
+	}
+	
+/******************** About Us  *********************/
+	.about-left,.about-right{
+		flex-basis: 100% ;
+	}
+	.about-content {
+		margin: 50px 20px 0 ;
+	}
+	
+ 
+/********* features, course, contact and footer ****************/
+	.features-col {
+		flex-basis: 100% ;
+		margin-bottom: 20px ;
+	}
+	.courses-left,.contact-right,
+	.contact-left,.contact-right,.footer-left,.footer-right {
+		flex-basis: 100% ;
+	}
+	.courses-left,.contact-right {
+		margin-top: 75px ;
+	
+	}
+	
+	#courses img {
+		display: none ;
+	}
+	.link-title{
+		flex-basis: 50% ;
+		margin-bottom: 30px ;
+	}
+
+/******************** Social Icons ******************/  
+
+}
+
+
+
+
